@@ -1,0 +1,1 @@
+$function castlewars:kits/$(kit_id)
