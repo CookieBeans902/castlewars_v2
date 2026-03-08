@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "check_entity": {
+      "trigger": "minecraft:player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction",
+          "nbt": {
+            "Tags": [
+              "kit_npc"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "check_entity"
+    ]
+  ],
+  "rewards": {
+    "function": "castlewars:kit_distribution/distribute_kits"
+  }
+}
