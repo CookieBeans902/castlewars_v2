@@ -18,4 +18,4 @@ data modify storage castlewars:temp temp.npc_macro.data.equipment.mainhand set f
 
 # Run the generate_helper function to generate the actual npc.
 $summon interaction ~ ~ ~ {Silent:1b,width:1f,height:2f,response:1b,Tags:["kit_npc",$(kit_name)],data:{kit_name:"$(kit_name)"}}
-function castlewars:generate/gen_kit_npc/gen_helper with storage castlewars:temp temp.npc_macro
+function castlewars:utils/gen_npc with storage castlewars:temp temp.npc_macro
